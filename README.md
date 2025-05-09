@@ -1,8 +1,27 @@
 # Community Portal Project
 
-## Overview
+## Project Overview
 
-Starter boilerplate for a Node.js + Express + EJS website.
+This project is a Community Portal for viewing and signing up to future events. It has 5 pages that includes an home, about, events, contact and thank you page.
+
+## Technologies used
+
+1. NodeJS
+2. Express.JS
+3. EJS
+4. CSS
+5. Github
+6. Nodemon
+
+## Team members and roles
+
+Charl Smuts
+
+Luqman Slarmie
+
+Matt Takawira
+
+Muhammad Toufeeq Parker
 
 ## Instructions
 
