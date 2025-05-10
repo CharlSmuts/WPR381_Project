@@ -1,4 +1,18 @@
 <%- include('../partials/header') %>
 <h1>Upcoming Events</h1>
 <p>Check out what's happening soon!</p>
-<%- include('../partials/footer') %>
+
+<div class="event-list">
+  <% if (events.length > 0) { %>
+    <% events.forEach(event => { %>
+      <div class="event-card">
+        <h2><%= event.title %></h2>
+        <p><strong>Date:</strong> <%= event.date %></p>
+        <p><strong>Location:</strong> <%= event.location %></p>
+      </div>
+    <% }); %>
+  <% } else { %>
+    <p>No events found.</p>
+  <% } %>
+</div>
+<%- include('footer') %>
