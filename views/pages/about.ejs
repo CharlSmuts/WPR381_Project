@@ -1,3 +1,24 @@
 <%- include('header') %>
 <h1>About Us</h1>
+<div>
+    <div>
+        <h2>team members</h2>
+        <% const membersArray = String(memberstext).split(','); %>
+        <ul>
+            <% membersArray.forEach(element => { %>
+            <li><%= element.trim() %></li>
+            <% }) %>
+        </ul>
+        
+    </div>
+    <div>
+        <h2>About us</h2>
+        <p>
+            <%= abouttext %>!
+        </p>
+
+
+    </div>
+</div>
+
 <%- include('footer') %>

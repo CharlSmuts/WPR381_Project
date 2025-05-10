@@ -1,4 +1,5 @@
 // routes/pageRoutes.js
+ const members =["member1", "member2"]
 
 const express = require('express');
 const router = express.Router();
@@ -8,7 +9,10 @@ router.get('/', (req, res) => {
 });
 
 router.get('/about', (req, res) => {
-    res.render("./pages/about")
+    res.render("./pages/about", {
+        memberstext:members,
+        abouttext:"aboutmoretext"
+      });
 });
 
 router.get('/events', (req, res) => {
