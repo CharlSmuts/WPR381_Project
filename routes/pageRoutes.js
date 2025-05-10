@@ -1,6 +1,6 @@
 // routes/pageRoutes.js
 
-const data = require('../app.js')
+const data = require('../Data.js')
 
 const express = require('express');
 const router = express.Router();

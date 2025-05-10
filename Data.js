@@ -26,3 +26,8 @@ let contact =[
         message:"Website is great"
     }
 ];
+
+let about = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu venenatis tellus, quis lacinia enim. Donec ullamcorper feugiat nulla, eu vulputate augue."]
+
+module.exports.aboutarray = about;
+module.exports.membersarray = teamMembers;

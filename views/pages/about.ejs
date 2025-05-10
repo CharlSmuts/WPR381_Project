@@ -3,10 +3,9 @@
 <div>
     <div>
         <h2>team members</h2>
-        <% const membersArray = String(memberstext).split(','); %>
         <ul>
-            <% membersArray.forEach(element => { %>
-            <li><%= element.trim() %></li>
+            <% memberstext.forEach(element => { %>
+            <li><%= element.name %> - <%= element.role %></li>
             <% }) %>
         </ul>
         

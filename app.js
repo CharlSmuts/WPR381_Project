@@ -26,11 +26,6 @@ app.post('/contact' , (req, res) => {
 })
 
 
-const aboutarray = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu venenatis tellus, quis lacinia enim. Donec ullamcorper feugiat nulla, eu vulputate augue."]
-const members =["member1", "member2"]
-
-module.exports.aboutarray = aboutarray;
-module.exports.membersarray = members;
 
 
 
