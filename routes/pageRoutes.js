@@ -17,7 +17,8 @@ router.get('/about', (req, res) => {
 });
 
 router.get('/events', (req, res) => {
-    res.render("./pages/events")
+    res.render("./pages/events",{events:data.eventsarray});
+
 });
 
 router.get('/contact', (req, res) => {

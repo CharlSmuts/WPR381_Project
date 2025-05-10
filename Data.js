@@ -31,3 +31,5 @@ let about = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ve
 
 module.exports.aboutarray = about;
 module.exports.membersarray = teamMembers;
+
+module.exports.eventsarray = events;
