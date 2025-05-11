@@ -10,13 +10,14 @@ const teamMembers =
 let events =[
     { title: "Community Cleanup",
     date: "2025-06-01",
-    location: "Main Park"
+    location: "Main Park",
+    image:""
     },
     {
     title: "Coding Workshop",
     date: "2025-06-15",
     location: "Library Hall",
-    image: "workshop.jpg"
+    image: ""
     }
 ]
 
