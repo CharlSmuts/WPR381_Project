@@ -1,23 +1,45 @@
 *{
     margin: 0;
     padding: 0;
+
 }
+
+ .members{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+ }
 
 body{
     min-height: 100vh;
-    background-image: url(image);
+    background-image: url();
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+ 
+ 
 
-#menu{
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    
+ 
+#rightalign{
+    margin-right: auto;
 }
-
+ 
+#left{
+    margin-right: auto;
+    list-style: none;
+}
+ 
+/* Nav */
+ 
+#menu{
+    background-color: silver;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+   
+}
+ 
 #navul{
     width: 100%;
     list-style: none;
@@ -25,11 +47,12 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
-.navli{
+ 
+ 
+.nav li{
     height: 50px;
 }
-
+ 
 .bt{
     height: 100%;
     padding: 0 30px;
@@ -39,17 +62,42 @@ body{
     color: black;
     transition: 0.3s;
 }
-
+ 
 .bt:hover{
     background-color: lightgray;
 }
-
-#rightalign{
-    margin-right: auto;
+ 
+.bt::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
-
-#left{
-    margin-right: auto;
-    list-style: none;
+ 
+.bt:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
-
+ 
+.bt:hover {
+    color: orange;
+    transform: scale(1.1);
+}
+ 
+/* Footer */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;    
+    text-align: center;
+    padding: 0.5em 1em;
+    font-size: 0.9em;    
+}
