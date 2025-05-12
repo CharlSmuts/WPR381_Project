@@ -22,12 +22,11 @@
         <p><strong>Start Time: </strong><%=event.startTime %></p>
         <p><strong>End Time: </strong><%=event.endTime %></p>
         <br>
-        <button class="bt" >
-           <a class="calendar-link"
-           href="https://www.google.com/calendar/render?action=TEMPLATE&text=<%= encodeURIComponent(event.title) %>&dates=<%= start %>/<%= end %>&details=Join+us+for+<%= encodeURIComponent(event.title) %>&location=<%= encodeURIComponent(event.location) %>"
-            target="_blank">
-             Add  to Calendar
-             </a>
+        <a
+      href="https://www.google.com/calendar/render?action=TEMPLATE&text=<%= encodeURIComponent(event.title) %>&dates=<%= start %>/<%= end %>&details=Join+us+for+<%= encodeURIComponent(event.title) %>&location=<%= encodeURIComponent(event.location) %>"
+      target="_blank">
+      <button class="centerbtn" >Add to Google Calendar</button>
+    </a>
         </button>
      
       </div>
