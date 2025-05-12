@@ -11,12 +11,16 @@ let events =[
     { title: "Community Cleanup",
     date: "2025-06-01",
     location: "Main Park",
+    startTime: "09:00",             
+    endTime: "11:00",   
     image:""
     },
     {
     title: "Coding Workshop",
     date: "2025-06-15",
     location: "Library Hall",
+    startTime: "14:00",
+    endTime: "16:30",
     image: ""
     }
 ]
