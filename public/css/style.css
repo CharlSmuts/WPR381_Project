@@ -13,10 +13,12 @@
 
 body{
     min-height: 100vh;
-       background: rgba(0, 0, 0, 0.5) url(space2.jpg);
-    background-size: cover;
+    background:  url(space2.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
+    border: none;
+    outline: none;
     color: aliceblue;
     filter: brightness(120%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -130,10 +132,12 @@ body{
 /*form*/
 form .bt{
     border-color: aliceblue;
-
+    size: 50px;
+    
     display: inline;
-border-width: 10px;
-
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
 }
 form input,textarea{
     border-radius: 2px;
