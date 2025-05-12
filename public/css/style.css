@@ -28,7 +28,6 @@ body{
 
 #left{
     margin-right: auto;
-    margin-left: auto;
     list-style: none;
 }
 /*removing dot on list items*/
@@ -82,10 +81,14 @@ body{
 }
 
 
-.nav li{
+.navli{
     height: 50px;
 }
  
+#portaltext{
+   color: black;
+}
+
 .bt{
     height: 100%;
     padding: 0 30px;
@@ -130,10 +133,10 @@ form .bt{
 
     display: inline;
 border-width: 10px;
-border-radius: 25px;
+
 }
 form input,textarea{
-    border-radius: 25px;
+    border-radius: 2px;
     padding: 3px;  
     padding-left: 8px;
 
