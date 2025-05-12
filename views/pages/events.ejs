@@ -21,10 +21,11 @@
         <p><strong>Start Time: </strong><%=event.startTime %></p>
         <p><strong>End Time: </strong><%=event.endTime %></p>
         <br>
-        <a 
+
+        <a
       href="https://www.google.com/calendar/render?action=TEMPLATE&text=<%= encodeURIComponent(event.title) %>&dates=<%= start %>/<%= end %>&details=Join+us+for+<%= encodeURIComponent(event.title) %>&location=<%= encodeURIComponent(event.location) %>"
       target="_blank">
-      Add to Google Calendar
+      <button class="centerbtn" >Add to Google Calendar</button>
     </a>
       </div>
     <% }); %>

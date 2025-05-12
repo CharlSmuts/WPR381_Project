@@ -2,5 +2,41 @@
 
 <h1 class="top">Welcome to the Community Portal</h1>
 
+<div class="middle">
+<br>
+<h2>latest events</h2>
+<br>
+<div class="event-list">
+  <% if (events.length > 0) { %>
+    <% events.forEach(event => { 
+       const eventDate = new Date(event.date); // assuming event.date = "2025-06-01"
+
+
+  const start = event.date.replace(/-/g, '') + 'T' + event.startTime.replace(':', '') + '00Z';
+  const end = event.date.replace(/-/g, '') + 'T' + event.endTime.replace(':', '') + '00Z';
+  %>
+      <div class="event-card">
+        <h2><%= event.title %></h2>
+        <img src="<%= event.image %>" alt="<%= event.title %> image">
+        <p><strong>Date: </strong> <%= event.date %></p>
+        <p><strong>Location: </strong> <%= event.location %></p>
+        <p><strong>Description: </strong><br><%=event.description %></p>
+        <p><strong>Start Time: </strong><%=event.startTime %></p>
+        <p><strong>End Time: </strong><%=event.endTime %></p>
+
+        
+        <br>
+       <button onclick="location.href = '/events';" class="centerbtn" >Go to events</button>
+      </div>
+    <% }); %>
+  <% } else { %>
+    <p>No events found.</p>
+    <br>
+  <% } %>
+</div>
+</div>
+<br>
+<br>
 <%- include('../partials/footer') %>
 
+            
