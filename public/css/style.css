@@ -32,6 +32,7 @@ body{
 #left{
     margin-right: auto;
     list-style: none;
+    margin-left: 1%;
 }
 /*removing dot on list items*/
 .middle li{
