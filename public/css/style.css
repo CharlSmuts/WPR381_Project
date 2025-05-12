@@ -14,7 +14,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background:  url(../images/htimg.jpg);
+    background:  url(../images/pexels-markusspiske-12081657.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -103,7 +103,46 @@ body{
     transition: 0.3s;
     border-radius: 0px;
 }
- 
+
+#bt{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: 0.3s;
+    border-radius: 10px;
+    align-items: center ;
+    
+}
+#bt:hover{
+     background-color: lightgray;
+}
+
+ #bt::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: aqua;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#bt:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#bt:hover {
+    color: aqua;
+    transform: scale(1.1);
+}
+
 .bt:hover{
     background-color: lightgray;
 }
@@ -121,10 +160,14 @@ body{
     transition: transform 0.25s ease-out;
 }
 
+
+
 .bt:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
 
 .bt:hover {
     color: aqua;
