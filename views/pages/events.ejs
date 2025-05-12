@@ -1,5 +1,6 @@
 <%- include('../partials/header') %>
 <h1 class="top">Upcoming Events</h1>
+
 <div class="middle">
 <br>
 <p>Check out what's happening soon!</p>
@@ -21,11 +22,14 @@
         <p><strong>Start Time: </strong><%=event.startTime %></p>
         <p><strong>End Time: </strong><%=event.endTime %></p>
         <br>
-        <a 
-      href="https://www.google.com/calendar/render?action=TEMPLATE&text=<%= encodeURIComponent(event.title) %>&dates=<%= start %>/<%= end %>&details=Join+us+for+<%= encodeURIComponent(event.title) %>&location=<%= encodeURIComponent(event.location) %>"
-      target="_blank">
-      Add to Google Calendar
-    </a>
+        <button class="bt" >
+           <a class="calendar-link"
+           href="https://www.google.com/calendar/render?action=TEMPLATE&text=<%= encodeURIComponent(event.title) %>&dates=<%= start %>/<%= end %>&details=Join+us+for+<%= encodeURIComponent(event.title) %>&location=<%= encodeURIComponent(event.location) %>"
+            target="_blank">
+             Add  to Calendar
+             </a>
+        </button>
+     
       </div>
     <% }); %>
   <% } else { %>

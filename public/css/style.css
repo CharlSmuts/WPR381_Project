@@ -148,6 +148,18 @@ form input,textarea{
 
 /*end form*/
 
+/* Events page*/
+.event-card{
+    padding:1.5rem;
+    align-items: center;
+}
+
+
+.calendar-link{
+    text-decoration: none;
+
+}
+
 /* Footer */
 footer {
     width: 100%;
