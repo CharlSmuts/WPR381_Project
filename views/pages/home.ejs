@@ -4,7 +4,7 @@
 
 <div class="middle">
 <br>
-<h2>latest events</h2>
+<h2>Featured Events</h2>
 <br>
 <div class="event-list">
   <% if (events.length > 0) { %>
@@ -18,8 +18,8 @@
       <div class="event-card">
         <h2><%= event.title %></h2>
         <img src="<%= event.image %>" alt="<%= event.title %> image">
-        <p><strong>Date: </strong> <%= event.date %></p>
-        <p><strong>Location: </strong> <%= event.location %></p>
+        <p><strong>Date: </strong><%= event.date %></p>
+        <p><strong>Location: </strong><%= event.location %></p>
         <p><strong>Description: </strong><br><%=event.description %></p>
         <p><strong>Start Time: </strong><%=event.startTime %></p>
         <p><strong>End Time: </strong><%=event.endTime %></p>

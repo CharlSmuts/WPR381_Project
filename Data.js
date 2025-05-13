@@ -25,6 +25,15 @@ let events =[
     startTime: "14:00",
     endTime: "16:30",
     image: "https://www.uwindsor.ca/engineering/sites/uwindsor.ca.engineering/files/go-code-girl-web.jpg"
+    },
+    {
+    title: "AI Workshop",
+    date: "2025-07-15",
+    location: "Library Hall",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu venenatis tellus, quis lacinia enim. Donec ullamcorper feugiat nulla, eu vulputate augue.",
+    startTime: "12:00",
+    endTime: "14:30",
+    image: "https://www.networkworld.com/wp-content/uploads/2025/01/3609889-0-66260200-1738008392-AI-networking-2-1.jpg?quality=50&strip=all&w=1024"
     }
 ]
 
