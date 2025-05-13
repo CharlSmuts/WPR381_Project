@@ -17,7 +17,7 @@ This project is a Community Portal for viewing and signing up to future events. 
 
 Charl Smuts
 
-Luqman Slarmie
+Luqmaan Slarmie
 
 Matt Takawira
 
