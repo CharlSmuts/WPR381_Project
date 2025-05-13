@@ -11,8 +11,8 @@
        const eventDate = new Date(event.date); // assuming event.date = "2025-06-01"
 
 
-  const start = event.date.replace(/-/g, '') + 'T' + event.startTime.replace(':', '') + '00Z';
-  const end = event.date.replace(/-/g, '') + 'T' + event.endTime.replace(':', '') + '00Z';
+  const start = event.date.replace(/-/g, '') + 'T' + event.startTime.replace(':', '') + '00';
+  const end = event.date.replace(/-/g, '') + 'T' + event.endTime.replace(':', '') + '00';
   %>
       <div class="event-card">
         <h2><%= event.title %></h2>
