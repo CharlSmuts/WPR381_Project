@@ -11,7 +11,7 @@
     justify-content: space-evenly;
  }
 
-body{
+body, html{
     width: 100%;
     min-height: 100vh;
     background:  url(../images/pexels-markusspiske-12081657.jpg);
@@ -23,6 +23,7 @@ body{
     color: aliceblue;
     filter: brightness(120%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x:hidden
 }
 
 #rightalign{
@@ -103,6 +104,7 @@ body{
     color: black;
     transition: 0.3s;
     border-radius: 0px;
+    border: 0px;
 }
 
 #bt{
@@ -240,6 +242,7 @@ footer {
     color: black;
     transition: 0.3s;
     border-radius: 0px;
+    border: 0px;
 }
 
  
