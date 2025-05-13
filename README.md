@@ -15,13 +15,13 @@ This project is a Community Portal for viewing and signing up to future events. 
 
 ## Team members and roles
 
-Charl Smuts
+Charl Smuts - Leader, backend developer
 
-Luqmaan Slarmie
+Luqmaan Slarmie - Documentation manager, front end developer
 
-Matt Takawira
+Matt Takawira - Front end developer
 
-Muhammad Toufeeq Parker
+Muhammad Toufeeq Parker - data manager, backend developer
 
 ## Instructions
 
