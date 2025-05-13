@@ -66,6 +66,7 @@ body, html{
     margin-left: 35%;
     margin-right: 35%;
     padding: 20px;
+    margin-bottom: 5%;
 }
 
 /*end of grid stuff*/
@@ -276,4 +277,9 @@ footer {
 a {
     text-decoration: none; 
     color: black; 
+}
+
+textarea{
+    width: 50%;
+    height: 100px;
 }
