@@ -1,18 +1,26 @@
 // routes/pageRoutes.js
 
+const data = require('../Data.js')
+
 const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render("./pages/home")
+    res.render("./pages/home", {
+        events:data.latesteventsarray
+    })
 });
 
 router.get('/about', (req, res) => {
-    res.render("./pages/about")
+    res.render("./pages/about", {
+        memberstext:data.membersarray,
+        abouttext:data.aboutarray
+      });
 });
 
 router.get('/events', (req, res) => {
-    res.render("./pages/events")
+    res.render("./pages/events",{events:data.eventsarray});
+
 });
 
 router.get('/contact', (req, res) => {
@@ -24,3 +32,5 @@ router.get('/thankyou', (req, res) => {
 });
 
 module.exports = router;
+
+console.log("latestevents:", data.latesteventsarray);

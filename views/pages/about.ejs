@@ -1,1 +1,23 @@
-<h1>About Us</h1>
+<%- include('../partials/header') %>
+<div class="con"></div>
+<h1 class="top">About Us</h1>
+<br>
+    <div class="middle">
+        
+        <h2>Team Members</h2>
+        <br>
+        <ul>
+            <% memberstext.forEach(element => { %>
+            <li><%= element.name %> - <%= element.role %></li>
+            <% }) %>
+        </ul>
+        <br>
+        <h2>About Us</h2>
+        <p>
+            <%= abouttext %>!
+        </p>
+    </div>
+
+</div>
+
+<%- include('../partials/footer') %>

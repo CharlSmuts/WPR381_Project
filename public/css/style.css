@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+ .members{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+ }
+
+body, html{
+    width: 100%;
+    min-height: 100vh;
+    background:  url(../images/pexels-markusspiske-12081657.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    border: none;
+    outline: none;
+    color: aliceblue;
+    filter: brightness(120%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x:hidden
+}
+
+#rightalign{
+    margin-right: auto;
+}
+
+#left{
+    margin-right: auto;
+    list-style: none;
+    margin-left: 1%;
+}
+/*removing dot on list items*/
+.middle li{
+    list-style: none;
+}
+/*end general*/
+
+/*grid stuff*/
+/**/
+/*creating grid*/
+.con{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+}
+/*for headers*/
+.top{
+    grid-column: 2 / 3;
+    grid-row: auto;
+    margin-top: 5%;
+    text-align: center;
+    background-color: rgba(0, 234, 255, 0); 
+}
+/*for body sections*/
+.middle{
+    grid-column: 1 / 4;
+    grid-row: auto;
+    text-align: center;
+    background-color: rgba(0, 93, 93, 0.5);
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 20px;
+    margin-bottom: 5%;
+}
+
+/*end of grid stuff*/
+
+/* Nav */
+
+#menu{
+    background-color: rgba(241, 241, 241, 0.677);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    color: rgba(38, 44, 44, 0.679);
+}
+ 
+#navul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navli{
+    height: 50px;
+}
+ 
+#portaltext{
+   color: black;
+}
+
+.bt{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: 0.3s;
+    border-radius: 0px;
+    border: 0px;
+}
+
+#bt{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: 0.3s;
+    border-radius: 10px;
+    align-items: center ;
+    
+}
+#bt:hover{
+     background-color: lightgray;
+}
+
+ #bt::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: aqua;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#bt:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#bt:hover {
+    color: aqua;
+    transform: scale(1.1);
+}
+
+.bt:hover{
+    background-color: lightgray;
+}
+
+.bt::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: aqua;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+
+
+.bt:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+.bt:hover {
+    color: aqua;
+    transform: scale(1.1);
+}
+/*end nav*/
+
+/*form*/
+form .bt{
+    border-color: aliceblue;
+    size: 50px;
+    
+    display: inline;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+form input,textarea{
+    border-radius: 0px;
+    padding: 3px;  
+    padding-left: 8px;
+
+}
+
+/*end form*/
+
+/* Events page*/
+.event-card{
+    padding:1.5rem;
+    align-items: center;
+}
+
+
+.calendar-link{
+    text-decoration: none;
+
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.684);
+    color: white;
+    position: fixed;
+    bottom: 0;    
+    text-align: center;
+    padding: 0.5em 1em;
+    font-size: 0.9em;    
+}
+/*end footer*/
+
+/*///////////////*/
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.centerbtn{
+    display: block;
+    margin: auto;
+    height: 35px;
+    border-radius: 0px;
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    border-radius: 0px;
+    border: 0px;
+}
+
+ 
+.centerbtn:hover{
+    background-color: lightgray;
+}
+
+.centerbtn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: aqua;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.centerbtn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.centerbtn:hover {
+    color: aqua;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none; 
+    color: black; 
+}
+
+textarea{
+    width: 50%;
+    height: 100px;
+}

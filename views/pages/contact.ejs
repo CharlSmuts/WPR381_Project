@@ -1,7 +1,17 @@
-<h1>Contact Us</h1>
-<form method="POST" action="/contact">
-  <input type="text" name="name" placeholder="Your Name" required /><br />
-  <input type="email" name="email" placeholder="Your Email" required /><br />
-  <textarea name="message" placeholder="Your Message" required></textarea><br />
-  <button type="submit">Send</button>
+
+<%- include('../partials/header') %>
+
+<h1 class="top">Contact Us</h1>
+<form class="middle"  method="POST" action="/contact">
+  <br>
+  <h2 >Enter your details here</h2><br />
+  <label for="name">Enter you name: </label>
+  <input type="text" name="name" placeholder="Your Name" required /><br /><br />
+  <label for="email">Enter you email: </label>
+  <input type="email" name="email" placeholder="Your Email" required /><br /><br />
+  <label for="message">Enter your message: </label><br />
+  <textarea name="message" placeholder="Your Message" required></textarea><br /><br />
+  <button class="bt" type="submit" onclick="SubmitContact()">Send</button>
 </form>
+
+<%- include('../partials/footer') %>
