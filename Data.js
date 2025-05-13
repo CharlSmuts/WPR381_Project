@@ -8,12 +8,13 @@ const teamMembers =
 ];
 
 let events =[
-    { title: "Community Cleanup",
+    { 
+    title: "Community Cleanup",
     date: "2025-06-01",
     location: "Main Park",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu venenatis tellus, quis lacinia enim. Donec ullamcorper feugiat nulla, eu vulputate augue.",
-    startTime: "09:00",             
-    endTime: "11:00",   
+    startTime: "15:00",             
+    endTime: "17:00",   
     image:"https://www.budgetdumpster.com/images/blog/litter-pickup-600x300.jpg"
     },
     {
