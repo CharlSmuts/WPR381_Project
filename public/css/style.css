@@ -12,8 +12,9 @@
  }
 
 body{
+    width: 100%;
     min-height: 100vh;
-    background:  url(space2.jpg);
+    background:  url(../images/pexels-markusspiske-12081657.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -31,6 +32,7 @@ body{
 #left{
     margin-right: auto;
     list-style: none;
+    margin-left: 1%;
 }
 /*removing dot on list items*/
 .middle li{
@@ -62,6 +64,7 @@ body{
     background-color: rgba(0, 93, 93, 0.5);
     margin-left: 35%;
     margin-right: 35%;
+    padding: 20px;
 }
 
 /*end of grid stuff*/
@@ -99,8 +102,48 @@ body{
     align-items: center;
     color: black;
     transition: 0.3s;
+    border-radius: 0px;
 }
- 
+
+#bt{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: 0.3s;
+    border-radius: 10px;
+    align-items: center ;
+    
+}
+#bt:hover{
+     background-color: lightgray;
+}
+
+ #bt::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: aqua;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#bt:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#bt:hover {
+    color: aqua;
+    transform: scale(1.1);
+}
+
 .bt:hover{
     background-color: lightgray;
 }
@@ -118,10 +161,14 @@ body{
     transition: transform 0.25s ease-out;
 }
 
+
+
 .bt:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
 
 .bt:hover {
     color: aqua;
@@ -140,7 +187,7 @@ form .bt{
     margin-bottom: 10px;
 }
 form input,textarea{
-    border-radius: 2px;
+    border-radius: 0px;
     padding: 3px;  
     padding-left: 8px;
 
@@ -173,3 +220,57 @@ footer {
 }
 /*end footer*/
 
+/*///////////////*/
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.centerbtn{
+    display: block;
+    margin: auto;
+    height: 35px;
+    border-radius: 0px;
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    border-radius: 0px;
+}
+
+ 
+.centerbtn:hover{
+    background-color: lightgray;
+}
+
+.centerbtn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: aqua;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.centerbtn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.centerbtn:hover {
+    color: aqua;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none; 
+    color: black; 
+}

@@ -6,7 +6,9 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render("./pages/home")
+    res.render("./pages/home", {
+        events:data.latesteventsarray
+    })
 });
 
 router.get('/about', (req, res) => {
@@ -30,3 +32,5 @@ router.get('/thankyou', (req, res) => {
 });
 
 module.exports = router;
+
+console.log("latestevents:", data.latesteventsarray);
