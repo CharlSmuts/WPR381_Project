@@ -15,16 +15,17 @@ This project is a Community Portal for viewing and signing up to future events. 
 
 ## Team members and roles
 
-Charl Smuts - Leader, backend developer
+Charl Smuts - Team Lead, Backend Developer
 
-Luqmaan Slarmie - Documentation manager, front end developer
+Luqmaan Slarmie - Documentation Manager, Backend Developer
 
-Matt Takawira - Front end developer
+Matt Takawira - Frontend Developer
 
-Muhammad Toufeeq Parker - data manager, backend developer
+Muhammad Toufeeq Parker - Data Manager, Backend Developer
 
 ## Instructions
 
 1. Run `npm install` to install dependencies.
 2. Use `npm run dev` to start the development server with nodemon.
 3. Add your own route handlers and middleware as needed.
+
